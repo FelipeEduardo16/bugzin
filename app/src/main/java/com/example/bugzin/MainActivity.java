@@ -20,27 +20,32 @@ public class MainActivity extends AppCompatActivity {
         txtNro2 = findViewById(R.id.txtNmrDois);
         swResultado = findViewById(R.id.swResultado);
     }
-    public void somar(View view){
+
+    public void somar(View view) {
         int valor1 = Integer.parseInt(txtNro1.getText().toString());
         int valor2 = Integer.parseInt(txtNro2.getText().toString());
 
         swResultado.setText(String.valueOf(valor1 + valor2));
     }
+
     public void subtrair(View view) {
         int valor1 = Integer.parseInt(txtNro1.getText().toString());
         int valor2 = Integer.parseInt(txtNro2.getText().toString());
 
         swResultado.setText(String.valueOf(valor1 - valor2));
     }
+
     public void multiplicar(View view) {
         int valor1 = Integer.parseInt(txtNro1.getText().toString());
         int valor2 = Integer.parseInt(txtNro2.getText().toString());
 
         swResultado.setText(String.valueOf(valor1 * valor2));
     }
-    public void dividir(View view){
+
+    public void dividir(View view) {
         int valor1 = Integer.parseInt(txtNro1.getText().toString());
         int valor2 = Integer.parseInt(txtNro2.getText().toString());
 
         swResultado.setText(String.valueOf(valor1 / valor2));
     }
+}
